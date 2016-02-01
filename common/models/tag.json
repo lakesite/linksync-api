@@ -13,7 +13,14 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "links": {
+      "type": "hasMany",
+      "model": "Link",
+      "foreignKey": "linkId",
+      "through": "LinkTag"
+    }
+  },
   "acls": [],
   "methods": {}
 }

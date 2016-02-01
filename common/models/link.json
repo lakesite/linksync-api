@@ -21,7 +21,8 @@
     "tags": {
       "type": "hasMany",
       "model": "Tag",
-      "foreignKey": ""
+      "foreignKey": "tagId",
+      "through": "LinkTag"
     }
   },
   "acls": [],
