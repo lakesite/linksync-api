@@ -36,11 +36,19 @@
     "dataSource": "db",
     "public": true
   },
+  "Group": {
+    "dataSource": "db",
+    "public": true    
+  },
   "Tag": {
     "dataSource": "db",
     "public": true
   },
   "LinkTag": {
+    "dataSource": "db",
+    "public": true
+  },
+  "LinkGroup": {
     "dataSource": "db",
     "public": true
   }

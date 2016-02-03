@@ -1,0 +1,24 @@
+{
+  "name": "LinkGroup",
+  "plural": "linkgroups",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "validations": [],
+  "relations": {
+    "tag": {
+      "type": "belongsTo",
+      "model": "Group",
+      "foreignKey": "groupId"
+    },
+    "link": {
+      "type": "belongsTo",
+      "model": "Link",
+      "foreignKey": "linkId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

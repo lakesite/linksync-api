@@ -1,0 +1,26 @@
+{
+  "name": "Group",
+  "plural": "groups",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "links": {
+      "type": "hasMany",
+      "model": "Link",
+      "foreignKey": "linkId",
+      "through": "LinkGroup"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
